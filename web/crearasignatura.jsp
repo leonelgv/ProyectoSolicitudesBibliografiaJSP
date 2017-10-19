@@ -13,11 +13,11 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <div class="container">
     <h2>Asignatura</h2>
-    <form method="post" action="crearAsignatura" name="frmnuevo" enctype="multipart/form-data" id="frm_nuevo"></form>
+    <form method="get" action="crearAsignatura" name="frmnuevo" id="frm_nuevo">
     <div class="row">
         <div class="col s4">
             <label>Clave asignatura</label>
-            <input type="text" name="cl ave_asignatura" placeholder="Clave asignatura"/>
+            <input type="text" name="clave_asignatura" placeholder="Clave asignatura"/>
         </div>
         <div class="col s4">
             <label>Nombre de la asignatura</label>
