@@ -10,7 +10,11 @@ public class Asignatura {
     public Asignatura() {
     }
 
-    public Asignatura(int claveAsig, String nombreAsignatura, int creditos, int claveCarrera, String asignaturacol) {
+    public Asignatura(int claveAsig,
+                      String nombreAsignatura,
+                      int creditos,
+                      int claveCarrera,
+                      String asignaturacol) {
         ClaveAsig = claveAsig;
         NombreAsignatura = nombreAsignatura;
         Creditos = creditos;
