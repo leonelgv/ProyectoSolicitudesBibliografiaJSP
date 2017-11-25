@@ -42,6 +42,11 @@ public class NuevaAsignaturaServlet extends HttpServlet {
         } catch (NumberFormatException e){
 
         }
+        out.println(clave_asignatura);
+        out.println(NombreAsignatura);
+        out.println(creditos);
+        out.println(claveCarrera);
+        out.println(Asignaturacol);
         Asignatura a = new Asignatura
                 (clave_asignatura,NombreAsignatura,creditos,
                         claveCarrera,Asignaturacol);
@@ -52,6 +57,9 @@ public class NuevaAsignaturaServlet extends HttpServlet {
             out.println("<p>Materia no agregada</p>");
         }
         //enctype="multipart/form-data"
+
+
+
         out.flush();
     }
 

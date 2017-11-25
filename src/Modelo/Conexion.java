@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Conexion {
     private String user = "bibliografia";
-    private String password = "B1bliografi4";
+    private String password = "kl5GsG1VBMNrwq2K";
     private String hostname = "localhost";
     private String port = "3306";
     private String database = "bibliografia";

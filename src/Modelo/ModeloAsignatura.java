@@ -23,7 +23,7 @@ public class ModeloAsignatura extends Conexion {
             }
 
         } catch (Exception e) {
-
+            System.out.println(e);
         } finally {
             try {
                 if(getConecction() != null) getConecction().close();
@@ -35,7 +35,7 @@ public class ModeloAsignatura extends Conexion {
         return flag;
     }
 
-    public ArrayList<Asignatura> getAllProductos(){
+    public ArrayList<Asignatura> getAllAsignaturas(){
         ArrayList<Asignatura> asignaturas = new ArrayList<>();
         PreparedStatement pst = null;
         ResultSet rs = null;
@@ -48,7 +48,7 @@ public class ModeloAsignatura extends Conexion {
                         rs.getString("NombreAsignatura"),
                         rs.getInt("Creditos"),
                         rs.getInt("ClaveCarrera"),
-                        rs.getString("Asignaturacol")));
+                        rs.getString("Asiganturacol")));
             }
         } catch (Exception e) {
 
@@ -68,7 +68,7 @@ public class ModeloAsignatura extends Conexion {
         ModeloAsignatura asign = new ModeloAsignatura();
         //System.out.println(asign.crear_asignatura(new Asignatura(1, "Mecanica", 5, 1234, "Mecanica")));
 
-        for(Asignatura a : asign.getAllProductos()) {
+        for(Asignatura a : asign.getAllAsignaturas()) {
             System.out.println(a.getNombreAsignatura());
         }
     }

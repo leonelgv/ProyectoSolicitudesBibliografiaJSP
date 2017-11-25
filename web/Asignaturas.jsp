@@ -21,7 +21,7 @@
 <div class="container">
     <h2>Asignatura</h2>
     <%ControladorAsignatura cp = new ControladorAsignatura();%>
-    <%= cp.getViewAsignaturas()%>
+    <%= cp.getViewAsignaturasCards()%>
 </div>
 </body>
 </html>
